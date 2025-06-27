@@ -1,105 +1,50 @@
-# E-commerce Sales Chatbot
+# E-commerce Sales Chatbot Frontend
 
-This project is a full-stack web application that integrates a chatbot for e-commerce sales. The application is built using React.js for the frontend and Python Flask for the backend. The chatbot assists users in finding products, answering queries, and facilitating a seamless shopping experience.
+This project is a React-based frontend for the E-commerce Sales Chatbot application. It interacts with a Flask backend to provide a seamless user experience for browsing products and chatting with the chatbot.
 
-## Project Structure
+## Table of Contents
 
-```
-ecommerce-sales-chatbot
-├── backend
-│   ├── app.py
-│   ├── requirements.txt
-│   ├── chatbot
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   │   └── mock_data.py
-│   └── README.md
-├── frontend
-│   ├── public
-│   │   └── index.html
-│   ├── src
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   ├── components
-│   │   │   ├── Chatbot.js
-│   │   │   └── ProductList.js
-│   │   └── mockData.js
-│   ├── package.json
-│   └── README.md
-└── README.md
-```
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Getting Started
+## Installation
 
-### Prerequisites
-
-- Python 3.x
-- Node.js and npm
-
-### Backend Setup
-
-1. Navigate to the `backend` directory:
+1. Clone the repository:
    ```
-   cd backend
+   git clone https://github.com/yourusername/ecommerce-sales-chatbot.git
    ```
 
-2. Install the required Python packages:
+2. Navigate to the frontend directory:
    ```
-   pip install -r requirements.txt
-   ```
-
-3. Run the Flask application:
-   ```
-   python app.py
+   cd ecommerce-sales-chatbot/frontend
    ```
 
-### Frontend Setup
-
-1. Navigate to the `frontend` directory:
-   ```
-   cd frontend
-   ```
-
-2. Install the required npm packages:
+3. Install the dependencies:
    ```
    npm install
    ```
 
-3. Start the React application:
-   ```
-   npm start
-   ```
+## Usage
 
-## Features
+To start the development server, run:
+```
+npm start
+```
+This will launch the application in your default web browser at `http://localhost:3000`.
 
-- User authentication (registration and login)
-- Chatbot interface for product queries
-- Display of product listings
-- Mock data for testing purposes
+## Components
 
-## API Endpoints
+- **App.js**: The main component that sets up routing and manages application state.
+- **Chatbot.js**: Handles user input and displays chat history, interacting with the backend API.
+- **ProductList.js**: Displays a list of products fetched from the backend.
 
-- `POST /api/register`: Register a new user
-- `POST /api/login`: Authenticate a user
-- `GET /api/products`: Retrieve a list of products
-- `POST /api/chat`: Send a message to the chatbot and receive a response
+## Contributing
 
-## Architectural Decisions
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
-- The backend is built using Flask for its simplicity and ease of use in creating RESTful APIs.
-- The frontend is developed with React.js to provide a dynamic and responsive user interface.
-- Mock data is utilized for both backend and frontend to facilitate testing without requiring a live database.
+## License
 
-## Challenges Faced
-
-- Integrating the chatbot with the product database required careful planning of the API endpoints.
-- Ensuring smooth communication between the frontend and backend necessitated thorough testing of API responses.
-
-## Solutions Implemented
-
-- Used Flask-JWT-Extended for secure user authentication.
-- Implemented error handling in API routes to provide meaningful feedback to the frontend.
-
-## Acknowledgments
-
-- Special thanks to the open-source community for providing libraries and tools that made this project possible.
+This project is licensed under the MIT License.
